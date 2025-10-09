@@ -1,0 +1,131 @@
+/* === CORES E FONTES === */
+:root {
+    --primary-green: #9CAF88;
+    --secondary-lilac: #D8BFD8;
+    --bg-light: #FAF9F6;
+    --text-dark: #3C4535;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+/* HERO SECTION */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('imagem/588.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: var(--secondary-lilac);
+    opacity: 0.3;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    padding: 6rem 1rem;
+}
+
+/* BOTÕES */
+.button-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 2rem;
+    background-color: var(--primary-green);
+    color: white;
+    font-weight: 600;
+    border-radius: 9999px;
+    transition: all 0.4s;
+}
+.button-primary:hover {
+    background-color: var(--text-dark);
+    transform: scale(1.03);
+}
+
+.button-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 2rem;
+    background-color: var(--secondary-lilac);
+    color: var(--text-dark);
+    font-weight: 600;
+    border-radius: 9999px;
+    border: 2px solid var(--secondary-lilac);
+    transition: all 0.4s;
+}
+.button-secondary:hover {
+    background-color: var(--primary-green);
+    color: white;
+    border-color: var(--primary-green);
+    transform: scale(1.03);
+}
+
+/* FORMULÁRIO */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: var(--text-dark);
+}
+
+/* INPUTS */
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    border: 2px solid #e5e5e5;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary-green);
+    outline: none;
+}
+
+/* CARDS DE SERVIÇO */
+.service-card {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--primary-green);
+    text-align: center;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+.service-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ANIMAÇÃO FADE-IN */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

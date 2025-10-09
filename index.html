@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Cerqueira | Psicanalista & Terapeuta Holística</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <header id="navbar">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-serif font-bold text-primary-green">SARA CERQUEIRA</a>
+            <div class="hidden md:flex space-x-8 text-lg">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre Mim</a>
+                <a href="#services" class="nav-link">Serviços</a>
+                <a href="#book" class="nav-link">Livro</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+            <button class="md:hidden text-text-dark hover:text-primary-green focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="overlay"></div>
+            <div class="hero-content fade-in-up">
+                <h1>Transforme sua Vida Através do Autoconhecimento</h1>
+                <p>Psicanálise, Terapias Holísticas e o poder de reencontrar a sua essência.</p>
+                <a href="#contact" class="button-primary">Agendar Sessão</a>
+            </div>
+        </section>
+
+        <!-- SOBRE MIM -->
+        <section id="about" class="container mx-auto py-20 lg:py-32 px-6">
+            <h2>Sobre Mim</h2>
+            <div class="flex flex-col lg:flex-row gap-12 items-center fade-in-up">
+                <div class="lg:w-1/2">
+                    <img src="https://placehold.co/600x600/9CAF88/FAF9F6?text=Foto+de+Sar+Cerqueira" alt="Sar Cerqueira">
+                </div>
+                <div class="lg:w-1/2 text-lg leading-relaxed space-y-4">
+                    <p>Sou Sar Cerqueira, Psicanalista e Terapeuta Holística com formação em Terapia Floral, Massoterapia, Reflexologia Podal e Aromaterapia.</p>
+                    <p>Acredito que cada pessoa carrega dentro de si o poder da cura e do equilíbrio — meu papel é guiá-la nesse processo de autodescoberta e bem-estar integral.</p>
+                    <p>Meu propósito é proporcionar um espaço acolhedor, onde mente, corpo e alma se encontram em harmonia.</p>
+                    <a href="#contact" class="button-secondary">Agende sua Sessão Agora 🗓️</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section id="services" class="bg-bg-light py-20 lg:py-32 px-6 border-t border-b border-gray-200">
+            <h2>Serviços</h2>
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="service-card fade-in-up">
+                    <h3>Psicanálise</h3>
+                    <p>A Psicanálise é um convite ao autoconhecimento, ajudando você a compreender as emoções e padrões que influenciam sua vida.</p>
+                </div>
+                <div class="service-card fade-in-up">
+                    <h3>Terapia Floral</h3>
+                    <p>[DESCRIÇÃO DO SERVIÇO]</p>
+                </div>
+                <div class="service-card fade-in-up">
+                    <h3>Massoterapia</h3>
+                    <p>[DESCRIÇÃO DO SERVIÇO]</p>
+                </div>
+                <div class="service-card fade-in-up">
+                    <h3>Reflexologia Podal</h3>
+                    <p>[DESCRIÇÃO DO SERVIÇO]</p>
+                </div>
+                <div class="service-card fade-in-up">
+                    <h3>Aromaterapia</h3>
+                    <p>[DESCRIÇÃO DO SERVIÇO]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LIVRO AUTÊNTICAS -->
+        <section id="book" class="container mx-auto py-20 lg:py-32 px-6">
+            <h2>Meu Livro: Autênticas – Mais Coragem do que Sorte</h2>
+            <div class="flex flex-col lg:flex-row gap-12 items-center bg-white p-8 rounded-xl shadow-xl fade-in-up">
+                <div class="lg:w-1/3 flex justify-center">
+                    <img src="https://placehold.co/400x600/D8BFD8/3C4535?text=Capa+do+eBook+Autênticas" alt="Capa do Livro Autênticas">
+                </div>
+                <div class="lg:w-2/3 text-lg leading-relaxed space-y-6">
+                    <p>[TEXTO SOBRE O LIVRO]</p>
+                    <a href="[LINK_DE_COMPRA]" target="_blank" class="button-secondary">Compre o eBook Agora 🛒</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contact" class="bg-primary-green text-white py-20 lg:py-32 px-6">
+            <div class="container mx-auto max-w-2xl text-center fade-in-up">
+                <h2>Entre em Contato</h2>
+                <p>[TEXTO CONVITE]</p>
+                <form action="[ENDPOINT_DO_FORMULÁRIO]" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Seu Nome" required>
+                    <input type="email" name="email" placeholder="Seu E-mail" required>
+                    <input type="tel" name="phone" placeholder="Telefone/WhatsApp">
+                    <textarea name="message" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
+                    <button type="submit">Enviar Mensagem ✉️</button>
+                </form>
+                <p>
+                    Preferência por WhatsApp? 
+                    <a href="[LINK_WHATSAPP]" target="_blank">Clique aqui para iniciar a conversa.</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-bg-light py-10 border-t border-gray-200">
+        <div class="container mx-auto px-6 text-center text-sm text-text-dark/70">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" target="_blank">📷</a>
+                <a href="#" target="_blank">📘</a>
+                <a href="#" target="_blank">🔗</a>
+            </div>
+            <p>&copy; <span id="current-year"></span> Sar Cerqueira | Psicanalista & Terapeuta. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
