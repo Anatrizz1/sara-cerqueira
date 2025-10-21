@@ -1,9 +1,13 @@
-/* === CORES E FONTES === */
 :root {
-    --primary-green: #9CAF88;
-    --secondary-lilac: #D8BFD8;
-    --bg-light: #FAF9F6;
-    --text-dark: #3C4535;
+    /* Mapeamento principal: */
+    --primary-action: #734939;  
+    --secondary-detail: #BF9788;  
+    --text-dark: #150B02; 
+
+    /* Cores de fundo e apoio: */
+    --bg-light: #FAF9F6; 
+    --color-detail: #775242; 
+    --color-soft-bg: #D5C3B7; 
 }
 
 body {
@@ -54,20 +58,79 @@ h1, h2, h3 {
     padding: 6rem 1rem;
 }
 
+/* SEÇÕES */
+
+h2 {
+    /* Define o tamanho base para todos os títulos h2 */
+    font-size: 2.5rem; 
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: var(--text-dark);
+}
+
+.section-title {
+    /* Estilo de destaque para o título principal da seção */
+    position: relative;
+    padding-bottom: 15px; /* Espaço para o detalhe */
+}
+
+.section-title::after {
+    /* Linha decorativa abaixo do h2 */
+    content: '';
+    display: block;
+    width: 80px; /* Largura da linha */
+    height: 4px;
+    background-color: var(--primary-green);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* Garante que o H2 nas seções de cor invertida funcione (Ex: Contato) */
+#contact h2, #contact p {
+    color: white; /* Ou outra cor clara */
+}
+
+/* === LISTA DE DESTAQUE (Para a seção 'Sobre Mim') === */
+/* Estilo customizado para o 'list-disc-custom' */
+.list-disc-custom {
+    list-style: none; /* Remove o marcador padrão */
+    padding-left: 0;
+}
+
+.list-disc-custom li {
+    position: relative;
+    padding-left: 1.5rem; /* Espaço para o marcador customizado */
+}
+
+.list-disc-custom li::before {
+    /* Cria o marcador customizado com a cor primária */
+    content: '•'; /* Ou qualquer outro caractere, ex: '★' */
+    color: var(--primary-green);
+    font-weight: 800;
+    font-size: 1.25rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /* BOTÕES */
 .button-primary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 0.75rem 2rem;
-    background-color: #734939;
+    background-color: var(--primary-action); /* #734939 */
     color: white;
     font-weight: 600;
     border-radius: 9999px;
     transition: all 0.4s;
 }
 .button-primary:hover {
-    background-color: #150B02;
+    background-color: var(--text-dark); 
     transform: scale(1.03);
 }
 
@@ -76,17 +139,17 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     padding: 0.75rem 2rem;
-    background-color: var(--secondary-lilac);
-    color: var(--text-dark);
+    background-color: #734939;
+    color: #D5C3B7;
     font-weight: 600;
     border-radius: 9999px;
-    border: 2px solid var(--secondary-lilac);
+    border: 2px solid #734939;
     transition: all 0.4s;
 }
 .button-secondary:hover {
-    background-color: var(--primary-green);
+    background-color: var(--primary-action); /* #734939 */
     color: white;
-    border-color: var(--primary-green);
+    border-color: var(--primary-action);
     transform: scale(1.03);
 }
 
