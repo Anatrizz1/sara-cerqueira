@@ -5,50 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sara Cerqueira | Psicanalista & Terapeuta Holística</title>
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- CSS externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="antialiased">
 
-    <!-- MENU DE NAVEGAÇÃO -->
-    <header id="navbar">
+    <header id="navbar" class="sticky top-0 z-50 bg-bg-light/95 backdrop-blur-sm shadow-sm">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-2xl font-serif font-bold text-primary-green">SARA CERQUEIRA</a>
+            <a href="#home" class="text-2xl font-serif font-bold logo">SARA CERQUEIRA</a>
             <div class="hidden md:flex space-x-8 text-lg">
-                <a href="#home" class="nav-link">Início</a>
+                <a href="#home" class="nav-link active">Início</a>
                 <a href="#about" class="nav-link">Sobre Mim</a>
                 <a href="#services" class="nav-link">Serviços</a>
                 <a href="#book" class="nav-link">Livro</a>
                 <a href="#contact" class="nav-link">Contato</a>
             </div>
-            <button class="md:hidden text-text-dark hover:text-primary-green focus:outline-none">
+            <button class="md:hidden text-text-dark hover:text-primary-action focus:outline-none" aria-label="Abrir Menu">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
-        </nav>
+            </nav>
     </header>
 
     <main>
-        <!-- HERO SECTION -->
         <section id="home" class="hero-section">
             <div class="overlay"></div>
             <div class="hero-content fade-in-up">
                 <h1>Transforme sua Vida Através do Autoconhecimento</h1>
                 <p>Psicanálise, Terapias Holísticas e o poder de reencontrar a sua essência.</p>
                 <br>
-                <a href="#contact" class="button-primary">Agendar Sessão</a>
+                <a href="#contact" class="button-primary mt-6">Agendar Sessão</a> 
             </div>
         </section>
 
-        <!-- SOBRE MIM -->
-      <section id="about" class="container mx-auto py-20 lg:py-32 px-6">
+        <section id="about" class="container mx-auto py-20 lg:py-32 px-6">
             <h2 class="section-title">Sobre Mim</h2> 
             <br>
             <div class="flex flex-col lg:flex-row gap-12 items-center fade-in-up">
@@ -59,7 +53,7 @@
                     loading="lazy" 
                     width="600" 
                     height="600" 
-                    class="rounded-xl shadow-lg object-cover w-full h-auto"
+                    class="rounded-xl shadow-xl object-cover w-full h-auto"
                     >
                 </div>
         
@@ -67,102 +61,142 @@
                 
                     <p class="mb-6">Olá, sou <strong>Sara Cerqueira</strong>, Psicanalista e Terapeuta Holística. Minha jornada no bem-estar integral me trouxe formação em:</p>
                 
-                        <ul class="list-disc-custom list-inside space-y-2 mb-8 ml-4">
-                            <li class="font-semibold">Psicanálise </li>
-                            <li class="font-semibold">Terapia Floral</li>
-                            <li class="font-semibold">Massoterapia</li>
-                            <li class="font-semibold">Reflexologia Podal</li>
-                            <li class="font-semibold">Aromaterapia</li>
-                        </ul>
+                    <ul class="list-disc-custom list-inside space-y-2 mb-8 ml-4">
+                        <li class="font-semibold">Psicanálise </li>
+                        <li class="font-semibold">Terapia Floral</li>
+                        <li class="font-semibold">Massoterapia</li>
+                        <li class="font-semibold">Reflexologia Podal</li>
+                        <li class="font-semibold">Aromaterapia</li>
+                    </ul>
                 
-                        <p class="mb-4">Acredito que cada pessoa carrega dentro de si o <strong>poder da cura e do equilíbrio</strong>. Meu papel é guiá-la nesse processo de autodescoberta e bem-estar integral.</p>
+                    <p class="mb-4">Acredito que cada pessoa carrega dentro de si o <strong>poder da cura e do equilíbrio</strong>. Meu papel é guiá-la nesse processo de autodescoberta e bem-estar integral.</p>
                 
-                        <p class="mb-8">Meu propósito é proporcionar um <strong>espaço acolhedor e seguro</strong>, onde mente, corpo e alma se encontram em harmonia, restaurando sua essência.</p>
+                    <p class="mb-8">Meu propósito é proporcionar um <strong>espaço acolhedor e seguro</strong>, onde mente, corpo e alma se encontram em harmonia, restaurando sua essência.</p>
                 
-                        <a href="#contact" 
-                        class="button-secondary mt-4 inline-block" 
-                        aria-label="Agende sua Sessão de Psicanálise ou Terapia Holística Agora"
-                        >
-                            Agende sua Sessão Agora
-                        </a>
+                    <a href="#contact" 
+                    class="button-secondary mt-4 inline-block" 
+                    aria-label="Agende sua Sessão de Psicanálise ou Terapia Holística Agora"
+                    >
+                        Agende sua Sessão Agora
+                    </a>
                 
-                 </div>
+                    </div>
             </div>
         </section>
 
-        <!-- SERVIÇOS -->
         <section id="services" class="bg-bg-light py-20 lg:py-32 px-6 border-t border-b border-gray-200">
-            <h2>Serviços</h2>
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="service-card fade-in-up">
-                    <h3>Psicanálise</h3>
-                    <p>A Psicanálise é um convite ao autoconhecimento, ajudando você a compreender as emoções e padrões que influenciam sua vida.</p>
-                </div>
-                <div class="service-card fade-in-up">
-                    <h3>Terapia Floral</h3>
-                    <p>[DESCRIÇÃO DO SERVIÇO]</p>
-                </div>
-                <div class="service-card fade-in-up">
-                    <h3>Massoterapia</h3>
-                    <p>[DESCRIÇÃO DO SERVIÇO]</p>
-                </div>
-                <div class="service-card fade-in-up">
-                    <h3>Reflexologia Podal</h3>
-                    <p>[DESCRIÇÃO DO SERVIÇO]</p>
-                </div>
-                <div class="service-card fade-in-up">
-                    <h3>Aromaterapia</h3>
-                    <p>[DESCRIÇÃO DO SERVIÇO]</p>
+            <div class="container mx-auto">
+                <h2 class="section-title">Serviços</h2> <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="service-card fade-in-up">
+                        <h3>Psicanálise</h3>
+                        <p>A Psicanálise é um convite ao autoconhecimento, ajudando você a compreender as emoções e padrões que influenciam sua vida.</p>
+                    </div>
+                    <div class="service-card fade-in-up">
+                        <h3>Terapia Floral</h3>
+                        <p>Método de tratamento complementar que utiliza essências vibracionais de flores para tratar desequilíbrios emocionais, como medo, ansiedade e depressão</p>
+                    </div>
+                    <div class="service-card fade-in-up">
+                        <h3>Massoterapia</h3>
+                        <p>A aplicação de diversas técnicas de massagem para tratar, prevenir e promover o bem-estar físico e mental.</p>
+                    </div>
+                    <div class="service-card fade-in-up">
+                        <h3>Reflexologia Podal</h3>
+                        <p>Terapia natural que usa a pressão em pontos específicos dos pés para estimular áreas correspondentes em todo o corpo, promovendo equilíbrio físico e mental</p>
+                    </div>
+                    <div class="service-card fade-in-up">
+                        <h3>Aromaterapia</h3>
+                        <p>A aplicação de óleos essenciais nos pés para tratar e relaxar, combinando as propriedades terapêuticas dos aromas com técnicas de massagem e cuidados podológicos.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- LIVRO AUTÊNTICAS -->
         <section id="book" class="container mx-auto py-20 lg:py-32 px-6">
-            <h2>Meu Livro: Autênticas – Mais Coragem do que Sorte</h2>
-            <div class="flex flex-col lg:flex-row gap-12 items-center bg-white p-8 rounded-xl shadow-xl fade-in-up">
+            <h2 class="section-title">Autênticas – Mais Coragem do que Sorte</h2> <div class="flex flex-col lg:flex-row gap-12 items-center bg-white p-8 rounded-xl shadow-xl fade-in-up">
                 <div class="lg:w-1/3 flex justify-center">
-                    <img src="https://placehold.co/400x600/D8BFD8/3C4535?text=Capa+do+eBook+Autênticas" alt="Capa do Livro Autênticas">
+                    <img src="imagem/autenticas.jpg" alt="Capa do Livro Autênticas" class="rounded-lg shadow-lg">
                 </div>
                 <div class="lg:w-2/3 text-lg leading-relaxed space-y-6">
-                    <p>[TEXTO SOBRE O LIVRO]</p>
-                    <a href="[LINK_DE_COMPRA]" target="_blank" class="button-secondary">Compre o eBook Agora 🛒</a>
+                    <p>Mais Coragem do que Sorte. Este livro não reuniu apenas histórias. Reuniu vidas reais, marcadas por desafios, recomeços e pela escolha diária de ser verdadeira, mesmo quando o caminho parecia impossível. Autênticas – Mais Coragem do que Sorte é um manifesto em forma de palavras .Uma coletânea de mulheres que não esperaram pela sorte, mas que, com coragem, fé e autenticidade, transformaram dores em propósito e limites em asas.A qui, você não vai encontrar contos de fadas — vai encontrar a beleza da realidade crua, onde cada cicatriz é prova de resistência e cada conquista, um grito silencioso de eu consegui. Este livro é para você, que já duvidou da própria força, mas continuou. Para você, que sabe que ser mulher é carregar o mundo nas costas e, ainda assim, manter o coração aberto. Para quem entende que liderar a própria vida é o maior ato de coragem.</p>
+                    <a href="https://pay.kiwify.com.br/GNHI1gT" target="_blank" class="button-secondary">Compre o eBook Agora</a>
                 </div>
             </div>
         </section>
 
-        <!-- CONTATO -->
-        <section id="contact" class="bg-primary-green text-white py-20 lg:py-32 px-6">
+<section id="contact" class="bg-[#734939] text-white py-20 lg:py-32 px-6"> 
             <div class="container mx-auto max-w-2xl text-center fade-in-up">
-                <h2>Entre em Contato</h2>
-                <p>[TEXTO CONVITE]</p>
-                <form action="[ENDPOINT_DO_FORMULÁRIO]" method="POST" class="contact-form">
-                    <input type="text" name="name" placeholder="Seu Nome" required>
-                    <input type="email" name="email" placeholder="Seu E-mail" required>
-                    <input type="tel" name="phone" placeholder="Telefone/WhatsApp">
-                    <textarea name="message" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
-                    <button type="submit">Enviar Mensagem ✉️</button>
-                </form>
-                <p>
-                    Preferência por WhatsApp? 
-                    <a href="[LINK_WHATSAPP]" target="_blank">Clique aqui para iniciar a conversa.</a>
+                <h2 class="section-title text-white">Pronta(o) para Transformar?</h2>
+                
+                <p class="text-xl mb-12 max-w-xl mx-auto">
+                    Não espere mais para iniciar sua jornada de autoconhecimento. 
+                    Agende sua sessão de Psicanálise ou Terapia Holística agora mesmo e encontre o seu equilíbrio.
+                </p>
+                
+                <a 
+                    href="https://wa.me/5521991197736?text=Olá,%20Sara!%20Vi%20o%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20sessão%20de%20Psicanálise%20ou%20Terapia%20Holística.%20Poderia%20me%20passar%20mais%20informações%20sobre%20disponibilidade?" 
+                    target="_blank" 
+                    class="button-whatsapp" 
+                    aria-label="Agendar sessão via WhatsApp"
+                >
+                    Fale comigo no WhatsApp
+                </a>
+                
+                <p class="mt-8 text-sm opacity-80">
+                    Atendimento online e presencial.
                 </p>
             </div>
         </section>
     </main>
 
-    <!-- RODAPÉ -->
     <footer class="bg-bg-light py-10 border-t border-gray-200">
         <div class="container mx-auto px-6 text-center text-sm text-text-dark/70">
-            <div class="flex justify-center space-x-6 mb-4">
-                <a href="#" target="_blank">📷</a>
-                <a href="#" target="_blank">📘</a>
-                <a href="#" target="_blank">🔗</a>
+            <div class="flex justify-center space-x-6 mb-4 text-xl">
+              <a href="https://www.instagram.com/psi.saraterapeuta/" target="_blank" aria-label="Instagram de Sara Cerqueira">
+                    <img 
+                        src="imagem/instagram.png" 
+                        alt="Logo do Instagram" 
+                        class="w-6 h-6 object-contain transition-transform duration-300 hover:scale-110"
+                    >
+                </a>
+                <a href="[LINK_DO_FACEBOOK]" target="_blank" aria-label="Facebook de Sara Cerqueira">
+                    <img 
+                        src="imagem/Facebook_Logo_2023.png" 
+                        alt="Logo do Facebook" 
+                        class="w-6 h-6 object-contain transition-transform duration-300 hover:scale-110"
+                    >
+                </a>
             </div>
-            <p>&copy; <span id="current-year"></span> Sar Cerqueira | Psicanalista & Terapeuta. Todos os direitos reservados.</p>
+            <p>&copy; <span id="current-year"></span> Sara Cerqueira | Psicanalista & Terapeuta. Todos os direitos reservados.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Observer para as animações
+        const faders = document.querySelectorAll(".fade-in-up");
+        const appearOptions = {
+            threshold: 0.2, // O elemento se torna visível quando 20% dele estiver na viewport
+            rootMargin: "0px 0px -100px 0px"
+        };
+        const appearOnScroll = new IntersectionObserver(function(
+            entries,
+            appearOnScroll
+        ) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add("is-visible");
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
 </body>
 </html>
