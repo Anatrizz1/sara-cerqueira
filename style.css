@@ -318,9 +318,9 @@ h2 {
         width: 280px;  /* Largura do menu lateral */
         z-index: 999;
         
-        /* O Blur Pesado que você pediu */
+        
         background-color: rgba(250, 249, 246, 0.4); 
-        backdrop-filter: blur(35px); 
+        backdrop-filter: blur(50px); 
         -webkit-backdrop-filter: blur(35px); 
         
         border-left: 1px solid rgba(115, 73, 57, 0.1);
